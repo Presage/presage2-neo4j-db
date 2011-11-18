@@ -147,8 +147,7 @@ public class AgentNode extends NodeDelegate implements PersistentAgent {
 
 	@Override
 	public UUID getID() {
-		int[] rawID = (int[]) this.getProperty(KEY_ID_RAW);
-		return new UUID(rawID[0], rawID[1]);
+		return UUID.fromString(this.getProperty(KEY_ID).toString());
 	}
 
 	@Override

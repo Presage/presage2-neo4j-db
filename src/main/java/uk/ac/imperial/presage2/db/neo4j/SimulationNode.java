@@ -175,7 +175,7 @@ class SimulationNode extends NodeDelegate implements PersistentSimulation {
 
 	@Override
 	public long getStartedAt() {
-		return (Long) this.getProperty(KEY_STARTED_AT, 0);
+		return (Long) this.getProperty(KEY_STARTED_AT, 0L);
 	}
 
 	@Override
@@ -191,7 +191,7 @@ class SimulationNode extends NodeDelegate implements PersistentSimulation {
 
 	@Override
 	public long getFinishedAt() {
-		return (Long) this.getProperty(KEY_FINISHED_AT, 0);
+		return (Long) this.getProperty(KEY_FINISHED_AT, 0L);
 	}
 
 	@Override

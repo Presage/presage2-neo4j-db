@@ -62,7 +62,7 @@ class NodeDelegate implements Node {
 	}
 
 	public Object getProperty(String arg0) {
-		return delegate.getProperty(arg0);
+		return delegate.getProperty(arg0, null);
 	}
 
 	public Iterable<String> getPropertyKeys() {
